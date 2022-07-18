@@ -1,0 +1,30 @@
+:root {
+  --cor-fundo: #474747;
+  --cor-barra: #CACACA;
+  --cor-texto: #FAFAFA;
+  --cor-vermelho:#FF0700;
+  --cor-botao:#FAE000;
+
+  --fonte-decorativa: "Righteous", cursive;
+  --fonte-normal: "Archivo Narrow", sans-serif;
+}
+
+button {
+  background-color: var(--cor-botao);
+  border: none;
+  color: var(--cor-fundo);
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  transition: background-color .5s linear, color .5s;
+}
+
+button:hover {
+  background-color: var(--cor-vermelho);
+  color: var(--cor-texto);
+}
+
+p {
+  font-family: var(--fonte-normal);
+  font-weight: 400;
+}

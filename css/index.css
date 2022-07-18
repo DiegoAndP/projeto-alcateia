@@ -1,0 +1,214 @@
+nav {
+  background-color: var(--cor-barra);
+}
+
+.navegacao__links {
+  display: flex;
+  height: 100px;
+  width: auto;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.navegacao__container-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navegacao__container-logo p {
+  margin: 0 5px 0 0;
+  font-size: 2.5rem;
+  font-family: var(--fonte-decorativa);
+}
+
+.navegacao__container-logo p:first-of-type {
+  color: var(--cor-vermelho);
+}
+
+.navegacao__container-logo p:last-of-type {
+  color: var(--cor-fundo);
+}
+
+.navegacao__logo {
+  display: flex;
+  background-image: url("../img/lion-logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  width: 120px;
+  align-content: flex-start;
+}
+
+/* .navegacao__links {
+    
+} */
+
+.navegacao__social {
+  display: flex;
+}
+
+.navegacao__social-links {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+}
+
+.navegacao__social-icon {
+  display: flex;
+}
+
+.navegacao__social-icon img {
+  height: 48px;
+}
+
+.principal {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  align-items: center;
+}
+
+.principal__planos {
+  display: flex;
+  color: var(--cor-texto);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.principal__planos-botao {
+  margin: 1rem 0 0 0;
+}
+
+.principal__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.principal__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.principal__logo img {
+  height: 600px;
+}
+
+.principal__mensagem {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--cor-texto);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--cor-barra);
+  padding: 0.5rem 0;
+}
+
+.footer p {
+  font-size: 1rem;
+}
+
+/* reponsividade celular */
+
+@media screen and (min-device-width: 0px) {
+  body {
+    padding: 0 1rem;
+  }
+
+  .navegacao__links {
+    width: 100%;
+    height: 180px;
+    justify-content: center;
+  }
+
+  .navegacao__container-logo {
+    display: none;
+  }
+
+  .navegacao__social {
+    flex-direction: column;
+  }
+
+  .navegacao__social-icon {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navegacao__login {
+    margin: 1rem 0;
+  }
+
+  .navegacao__social-links {
+    margin: 1rem 0;
+  }
+
+  .navegacao__social-icon {
+    margin: 0 0.5rem;
+  }
+
+  .principal {
+    padding: 1rem 1rem;
+    flex-direction: column;
+  }
+
+  .principal__planos {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .principal__logo img {
+    height: 10%;
+    margin: 2rem 0;
+  }
+
+  .principal__mensagem {
+    width: 100%;
+  }
+}
+
+@media screen and (min-device-width: 768px) {
+  body {
+    padding: 0 1.5rem;
+  }
+
+  .navegacao__links {
+    justify-content: space-between;
+  }
+
+  .navegacao__container-logo {
+    display: flex;
+  }
+
+  .principal {
+    padding: 2rem 1.5rem;
+  }
+
+  .principal__planos {
+    width: 50%;
+  }
+
+  .principal__logo {
+    width: 70%;
+  }
+}
+
+@media screen and (min-device-width: 1024px) {
+  .navegacao__social {
+    flex-direction: row;
+  }
+  .navegacao__login {
+    margin-right: 1rem;
+  }
+
+  .principal {
+    flex-direction: row;
+  }
+}
